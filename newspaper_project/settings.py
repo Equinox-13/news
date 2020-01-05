@@ -133,3 +133,6 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Outputs the email text to our command line console on password reset
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
