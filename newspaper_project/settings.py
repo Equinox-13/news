@@ -135,4 +135,11 @@ LOGOUT_REDIRECT_URL = 'home'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Outputs the email text to our command line console on password reset
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
