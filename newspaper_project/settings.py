@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
     'articles.apps.ArticlesConfig',
-     
+
      # 3rd Party
     'crispy_forms',
 
@@ -141,3 +141,6 @@ EMAIL_HOST_USER = 'apikey'
 # EMAIL_HOST_PASSWORD = '<password from sendgrid>'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
